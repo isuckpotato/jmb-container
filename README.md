@@ -11,8 +11,8 @@ How to from [SeVile/MusicBot](https://github.com/SeVile/MusicBot/releases/tag/0.
 In your bot folder, edit "config.txt" and add:
 
 ytpotoken = "PO_TOKEN_HERE"
+
 ytvisitordata = "VISITOR_DATA_HERE"
-Important
 
 Use youtube-trusted-session-generator to get po_token and visitor_data.
 
