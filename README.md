@@ -14,7 +14,7 @@ ytpotoken = "PO_TOKEN_HERE"
 
 ytvisitordata = "VISITOR_DATA_HERE"
 
-Use youtube-trusted-session-generator to get po_token and visitor_data.
+Use [youtube-trusted-session-generator](https://github.com/iv-org/youtube-trusted-session-generator) to get po_token and visitor_data.
 
 Warning
 
