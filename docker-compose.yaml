@@ -1,9 +1,8 @@
-version: '2.2'
-
 services:
   jmusicbot:
-    image: craumix/jmusicbot
+    hostname: jmusicbot
     container_name: jmusicbot
+    image: sajmonlab/jmb-container:latest
     restart: unless-stopped
     volumes:
-     - ./config:/jmb/config
+     - /jmusicbot/config:/jmb/config
