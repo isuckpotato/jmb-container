@@ -23,8 +23,8 @@ RUN apk add --update --no-cache \
 RUN mkdir -p /jmb/config
 ADD --chmod=644 https://github.com/IsuckPOTATO/jmb-container/releases/download/0.4.3.2/JMusicBot-0.4.3.2.jar /jmb/JMusicBot.jar
 ADD --chmod=644 https://github.com/jagrosh/MusicBot/releases/download/0.2.9/config.txt /jmb/config/config.txt
+ADD --chmod=755 https://github.com/isuckpotato/jmb-container/releases/download/0.4.3.2/docker-entrypoint.sh /jmb/docker-entrypoint.sh
 
-COPY --chmod=755 ./docker-entrypoint.sh /jmb
 
 VOLUME /jmb/config
 
