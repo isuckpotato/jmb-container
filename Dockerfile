@@ -16,8 +16,12 @@ LABEL org.label-schema.vcs-ref=$VCS_REF
 LABEL org.label-schema.version=$VERSION
 LABEL org.label-schema.docker.cmd="docker run -v ./config:/jmb/config -d craumix/jmusicbot"
 
+USER root
+
 RUN apk add --update --no-cache \
     openjdk11-jre-headless tini
+    
+RUN apk add --no-cache docker-ce
 
 #No downloadable example config since 0.2.10
 RUN mkdir -p /jmb/config
