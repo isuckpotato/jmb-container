@@ -21,9 +21,9 @@ RUN apk add --update --no-cache \
 
 #No downloadable example config since 0.2.10
 RUN mkdir -p /jmb/config
-ADD --chmod=644 https://github.com/IsuckPOTATO/jmb-container/releases/download/0.4.3.5.0/JMusicBot-0.4.3.5.jar /jmb/JMusicBot.jar
+ADD --chmod=644 https://github.com/IsuckPOTATO/jmb-container/releases/download/0.4.3.7.2/JMusicBot-0.4.3.7h2.jar /jmb/JMusicBot.jar
 ADD --chmod=644 https://github.com/jagrosh/MusicBot/releases/download/0.2.9/config.txt /jmb/config/config.txt
-ADD --chmod=755 https://github.com/isuckpotato/jmb-container/releases/download/0.4.3.5.0/docker-entrypoint.sh /jmb/docker-entrypoint.sh
+ADD --chmod=755 https://github.com/isuckpotato/jmb-container/releases/download/0.4.3.7.2/docker-entrypoint.sh /jmb/docker-entrypoint.sh
 
 
 VOLUME /jmb/config
