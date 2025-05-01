@@ -5,7 +5,7 @@
 
 A containerized version of the [JMusicBot by jagrosh](https://github.com/jagrosh/MusicBot).
 
-Version with lavaplayer updated to 1.11.2.
+Version with lavaplayer updated to 1.13.0.
 How to from [SeVile/MusicBot](https://github.com/SeVile/MusicBot/releases/tag/0.4.3.2)
 
 In your bot folder, edit "config.txt" and add:
