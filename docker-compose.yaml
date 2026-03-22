@@ -6,3 +6,4 @@ services:
     restart: unless-stopped
     volumes:
      - /jmusicbot/config:/jmb/config
+     - /var/run/docker.sock:/var/run/docker.sock
