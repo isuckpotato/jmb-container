@@ -23,7 +23,7 @@ RUN apk add --update --no-cache \
     
 #RUN apk add --no-cache docker-ce
 
-RUN curl -fsSL https://get.docker.com | sh
+RUN apk add docker
 
 #No downloadable example config since 0.2.10
 RUN mkdir -p /jmb/config
