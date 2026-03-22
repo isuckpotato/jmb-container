@@ -21,12 +21,14 @@ USER root
 RUN apk add --update --no-cache \
     openjdk11-jre-headless tini
     
-RUN apk add --no-cache docker-ce
+#RUN apk add --no-cache docker-ce
+
+RUN curl -fsSL https://get.docker.com | sh
 
 #No downloadable example config since 0.2.10
 RUN mkdir -p /jmb/config
 ADD --chmod=644 https://github.com/IsuckPOTATO/jmb-container/releases/download/0.4.3.9/JMusicBot-0.4.3.9.jar /jmb/JMusicBot.jar
-ADD --chmod=644 https://github.com/jagrosh/MusicBot/releases/download/0.2.9/config.txt /jmb/config/config.txt
+#ADD --chmod=644 https://github.com/jagrosh/MusicBot/releases/download/0.2.9/config.txt /jmb/config/config.txt
 ADD --chmod=755 https://github.com/isuckpotato/jmb-container/releases/download/0.4.3.9/docker-entrypoint.sh /jmb/docker-entrypoint.sh
 
 
